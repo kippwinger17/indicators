@@ -141,7 +141,7 @@ namespace NinjaTrader.NinjaScript.Indicators
 
 		protected override void OnBarUpdate()
 		{
-            NinjaTrader.Code.Output.Process("------------ Dynamic SR Values START ------------ \n", PrintTo.OutputTab2);
+            //NinjaTrader.Code.Output.Process("------------ Dynamic SR Values START ------------ \n", PrintTo.OutputTab2);
             if ( CurrentBar <= MaxLookBackBars ) 
 				return;
 		
@@ -200,10 +200,10 @@ namespace NinjaTrader.NinjaScript.Indicators
                             resistanceTop1[0] = resTop1;
                             resistanceBottom1[0] = resBottom1;
                             
-                            NinjaTrader.Code.Output.Process("Top of Red Box1: " + resTop1.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of Red Box1: " + resTop1.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of Red Box1: " + resBottom1.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
-                                
+                            */  
                             //NinjaTrader.Code.Output.Process("resistanceTop1[0]: " + resistanceTop1[0].ToString(), PrintTo.OutputTab1);
                         }
 
@@ -216,9 +216,9 @@ namespace NinjaTrader.NinjaScript.Indicators
                             resistanceTop2[0] = resTop2;
                             resistanceBottom2[0] = resBottom2;
 
-                            NinjaTrader.Code.Output.Process("Top of Red Box2: " + resTop2.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of Red Box2: " + resTop2.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of Red Box2: " + resBottom2.ToString(), PrintTo.OutputTab2);
-                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
+                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);*/
                             
                         }
 
@@ -231,9 +231,9 @@ namespace NinjaTrader.NinjaScript.Indicators
                             resistanceTop3[0] = resTop3;
                             resistanceBottom3[0] = resBottom3;
                             
-                            NinjaTrader.Code.Output.Process("Top of Red Box3: " + resTop3.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of Red Box3: " + resTop3.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of Red Box3: " + resBottom3.ToString(), PrintTo.OutputTab2);
-                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
+                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);*/
                             
                         }
                         
@@ -257,9 +257,9 @@ namespace NinjaTrader.NinjaScript.Indicators
 
                             supportTop1[0] = supTop1;
                             supportBottom1[0] = supBottom1;
-                            NinjaTrader.Code.Output.Process("Top of a Blue1: " + supTop1.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of a Blue1: " + supTop1.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of a Blue1: " + supBottom1.ToString(), PrintTo.OutputTab2);
-                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
+                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);*/
                         }
 
                         if (level == 2)
@@ -270,9 +270,9 @@ namespace NinjaTrader.NinjaScript.Indicators
 
                             supportTop2[0] = supTop2;
                             supportBottom2[0] = supBottom2;
-                            NinjaTrader.Code.Output.Process("Top of a Blue2: " + supTop2.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of a Blue2: " + supTop2.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of a Blue2: " + supBottom2.ToString(), PrintTo.OutputTab2);
-                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
+                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);*/
                         }
 
                         if (level == 3)
@@ -283,9 +283,9 @@ namespace NinjaTrader.NinjaScript.Indicators
 
                             supportTop3[0] = supTop3;
                             supportBottom3[0] = supBottom3;
-                            NinjaTrader.Code.Output.Process("Top of a Blue3: " + supTop3.ToString(), PrintTo.OutputTab2);
+                            /*NinjaTrader.Code.Output.Process("Top of a Blue3: " + supTop3.ToString(), PrintTo.OutputTab2);
                             NinjaTrader.Code.Output.Process("Bottom of a Blue3: " + supBottom3.ToString(), PrintTo.OutputTab2);
-                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);
+                            NinjaTrader.Code.Output.Process("\n", PrintTo.OutputTab2);*/
                         }
                         
 
@@ -294,7 +294,7 @@ namespace NinjaTrader.NinjaScript.Indicators
                     }
 				}
 			}
-            NinjaTrader.Code.Output.Process("------------ Dynamic SR Values END ------------ \n", PrintTo.OutputTab2);
+            //NinjaTrader.Code.Output.Process("------------ Dynamic SR Values END ------------ \n", PrintTo.OutputTab2);
             LastBar = CurrentBar;
         }
 		
